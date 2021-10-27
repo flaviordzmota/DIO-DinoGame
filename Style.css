@@ -4,7 +4,7 @@ body{
 
 .dino {
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     background-image: url(dino.gif);
     background-color: rgba(217, 255, 255, 0);
     background-size: 100% 100%;
@@ -12,11 +12,21 @@ body{
     height: 60px;
 }
 
-.Cactus {
+.cactus {
     position: absolute;
-    bottom: 0;
-    background-image: url(Cactus.png);
-    background-color:rgba(217, 255, 255, 0);
+    bottom: 40px;
+    background-image: url(cactus.png);
+    background-color:rgba(255, 72, 0, 0);
+    background-size: 100% 100%;
+    width: 60px;
+    height: 60px;
+}
+
+.platinha {
+    position: absolute;
+    bottom: 40px;
+    background-image: url(platinha.gif);
+    background-color:rgba(255, 72, 0, 0);
     background-size: 100% 100%;
     width: 60px;
     height: 60px;
@@ -29,24 +39,33 @@ body{
     font-family: arial;
 }
 
+.pontos{
+text-align: center;
+color: #666;
+margin-top: 20px 0; 
+font-family: arial;
+}
+
 @keyframes slideright {
     from{
-        background-position: 70000%;
+        background-position: 70000px;
     }
     to {
-        background-position: 0%;
+        background-position: 0px;
     }
 }
 
 .background{
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     background-image: url('background.png');
     background-repeat: repeat-x;
+    background-size: cover;
     animation: slideright 600s infinite linear;
     -webkit-animation: slideright 600s infinite linear;
     width: 100%;
-    height: 100%;
+    height: 500px;
+
 }
 
 
